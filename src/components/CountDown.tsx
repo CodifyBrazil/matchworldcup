@@ -9,7 +9,7 @@ export const CountDown = () => {
     const openingDay = new Date(new Date());
   };
 
-  console.log(dateOpening);
+  // console.log(dateOpening);
   return (
     <Flex
       bg={"#fff"}
