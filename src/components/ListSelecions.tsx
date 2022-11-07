@@ -19,27 +19,35 @@ export const ListSelecions = () => {
 
   return (
     <Flex
-      overflow={"hidden"}
+      overflow={"auto"}
+      sx={{
+        "&::-webkit-scrollbar": {
+          width: "0px",
+          height: "6px",
+          borderRadius: "8px",
+          backgroundColor: `#ccc`,
+        },
+        "&::-webkit-scrollbar-thumb": {
+          backgroundColor: `#4128ff`,
+          borderRadius: "8px",
+        },
+      }}
       bg={"#fff"}
       w="70%"
-      h="50px"
+      h="70px"
       flexDirection={"row"}
       alignItems={"center"}
       justifyContent="center"
       border="2px solid #4128ff"
       borderRadius={"4px"}
       mt="10px"
+      p="5px"
     >
       <Flex justifyContent={"space-between"}>
-        <Box pos={"absolute"} zIndex={"999"}>
-          <Button>
-            <MdKeyboardArrowLeft />
-          </Button>
-        </Box>
         {flag.map((item, index) => (
-          <Tooltip label={item.mandante.replaceAll(".svg", "")}>
+          <Tooltip key={index} label={item.mandante.replaceAll(".svg", "")}>
             <Box
-              key={index}
+              cursor={"pointer"}
               w="40px"
               h="40px"
               borderRadius={"full"}
@@ -57,11 +65,6 @@ export const ListSelecions = () => {
             </Box>
           </Tooltip>
         ))}
-        <Box>
-          <Button>
-            <MdKeyboardArrowRight />
-          </Button>
-        </Box>
       </Flex>
     </Flex>
   );
