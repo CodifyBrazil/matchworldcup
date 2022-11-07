@@ -30,6 +30,11 @@ export const Card = () => {
             h="100px"
             borderRadius={"4px"}
             border="1px solid #ccc"
+            cursor={"pointer"}
+            _hover={{
+              boxShadow: "2xl",
+              border: "1px solid #4128ff",
+            }}
             mt="10px"
             bg={"#fff"}
           >
