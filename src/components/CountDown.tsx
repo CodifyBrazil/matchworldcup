@@ -5,8 +5,8 @@ import { useCountdown } from "../utils/Countdown";
 export const CountDown = () => {
   let days;
   let hours = 0;
-  let minutes;
-  let seconds;
+  let minutes = 0;
+  let seconds = 0;
 
   const contDownTimer = (targetDate: any) => {
     [days, hours, minutes, seconds] = useCountdown(targetDate);
@@ -35,19 +35,19 @@ export const CountDown = () => {
         </Box>
         <Box textAlign={"center"}>
           <Text mr="20px" as="b" fontSize={"80px"}>
-            {hours}
+            {hours >= 10 ? hours : "0" + hours}
           </Text>
           <Text mt="-10px">{hours > 1 ? "Horas" : "Hora"}</Text>
         </Box>
         <Box textAlign={"center"}>
           <Text mr="20px" as="b" fontSize={"80px"}>
-            {minutes}
+            {minutes >= 10 ? minutes : "0" + minutes}
           </Text>
           <Text mt="-10px">Minutos</Text>
         </Box>
         <Box textAlign={"center"}>
           <Text mr="20px" as="b" fontSize={"80px"} color="#ed1515">
-            {seconds}
+            {seconds >= 10 ? seconds : "0" + seconds}
           </Text>
           <Text mt="-10px">Secundos</Text>
         </Box>
