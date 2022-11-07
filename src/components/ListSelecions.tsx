@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Image } from "@chakra-ui/react";
 
 export const ListSelecions = () => {
   return (
@@ -14,16 +14,14 @@ export const ListSelecions = () => {
       mt="10px"
     >
       <Flex>
-        <Box bg="#ccc" w="40px" h="40px" borderRadius={"full"} border="none">
+        <Button w="40px" h="40px" borderRadius={"full"}>
           <Image
             src="/alemanha.svg"
-            w="100%"
-            h="40px"
             borderRadius={"full"}
             objectFit="cover"
             border="none"
           />
-        </Box>
+        </Button>
       </Flex>
     </Flex>
   );
