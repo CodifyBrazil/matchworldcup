@@ -6,16 +6,13 @@ import { API } from "../service/API";
 import { API_type } from "../types/API";
 
 export const ListSelecions = () => {
-  useEffect(() => {
-    getFlags();
-  }, []);
-
   const [flag, setFlag] = useState<API_type[]>([]);
 
   const getFlags = async () => {
     const { data } = await API.getAllMatchs();
     setFlag(data);
   };
+  getFlags();
 
   return (
     <Flex
