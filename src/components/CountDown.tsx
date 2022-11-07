@@ -1,5 +1,4 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 
 import { useCountdown } from "../utils/Countdown";
 
@@ -14,7 +13,6 @@ export const CountDown = () => {
   };
 
   contDownTimer(new Date("Nov 20, 2022 13:00:00"));
-  console.log(days);
 
   return (
     <Flex
