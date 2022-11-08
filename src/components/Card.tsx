@@ -42,7 +42,7 @@ export const Card = () => {
               <Text as="b" fontSize={"13px"}>
                 {item.diaSemana.toLocaleLowerCase()}{" "}
                 {item.data.replaceAll("/2022", "")}
-                {" ás "}
+                {" • "}
                 {item.hora}
               </Text>
               <Flex
