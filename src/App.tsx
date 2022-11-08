@@ -1,5 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { Flex } from "@chakra-ui/react";
 import { Card } from "./components/Card";
 import { CountDown } from "./components/CountDown";
 import { ListSelecions } from "./components/ListSelecions";
