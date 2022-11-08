@@ -26,27 +26,27 @@ export const CountDown = () => {
       borderRadius={"4px"}
       mt="40px"
     >
-      <Flex justifyContent={"center"}>
-        <Box textAlign={"center"}>
-          <Text mr="20px" as="b" fontSize={"80px"}>
+      <Flex textAlign={"center"}>
+        <Box textAlign={"center"} w="120px">
+          <Text mr="20px" as="b" fontSize={"80px"} m="auto">
             {days}
           </Text>
           <Text mt="-10px">Dias</Text>
         </Box>
-        <Box textAlign={"center"}>
-          <Text mr="20px" as="b" fontSize={"80px"}>
+        <Box textAlign={"center"} w="120px">
+          <Text mr="20px" as="b" fontSize={"80px"} m="auto">
             {hours >= 10 ? hours : "0" + hours}
           </Text>
           <Text mt="-10px">{hours > 1 ? "Horas" : "Hora"}</Text>
         </Box>
-        <Box textAlign={"center"}>
-          <Text mr="20px" as="b" fontSize={"80px"}>
+        <Box textAlign={"center"} w="120px">
+          <Text mr="20px" as="b" fontSize={"80px"} m="auto">
             {minutes >= 10 ? minutes : "0" + minutes}
           </Text>
           <Text mt="-10px">Minutos</Text>
         </Box>
-        <Box textAlign={"center"}>
-          <Text mr="20px" as="b" fontSize={"80px"} color="#ed1515">
+        <Box textAlign={"center"} w="120px">
+          <Text mr="20px" as="b" fontSize={"80px"} color="#ed1515" m="auto">
             {seconds >= 10 ? seconds : "0" + seconds}
           </Text>
           <Text mt="-10px">Secundos</Text>
